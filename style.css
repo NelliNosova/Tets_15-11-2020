@@ -1,0 +1,11 @@
+.front-one {
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.front-one img {
+  display: block;
+  margin: auto;
+}
