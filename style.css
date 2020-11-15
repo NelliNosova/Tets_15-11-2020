@@ -30,8 +30,7 @@
 /*===========Two============*/
 .navigation {
   min-height: 50px;
-  margin-bottom: 20px;
-  background-color: teal;
+  margin-bottom: 120px;
 }
 
 .nav-list {
@@ -41,6 +40,7 @@
 }
 
 .nav-item {
+  position: relative;
   margin-top: 2%;
   margin-bottom: 2%;
   padding: 5px;
@@ -58,11 +58,42 @@
   color: inherit;
 }
 
-.nav-item:hover {
-  transition: all .3s ease;
-  transform: scale(1.2);
-}
-
 .nav-item:active {
   opacity: 0.7;
 } 
+
+
+/*===========Three============*/
+.item-list {
+  opacity: 0;
+  visibility: hidden;
+  transition: .55s opacity, .55s visibility;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 20;
+  border-radius: 10%;
+  list-style: none; 
+}
+
+.nav-item:hover .item-list {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+  background-color: none;
+}
+
+.item-elem {
+  padding: 10px;
+  text-align: right;
+}
+
+.item-elem:not(:last-child) {
+  border-bottom:solid 1px rgb(25, 165, 247);
+}
+
+.item-elem:not(:first-child) {
+  border-top:solid 1px rgb(131, 229, 241);
+}
