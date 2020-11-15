@@ -117,6 +117,8 @@
 .five__block {
   width: 15%;
   margin-top: auto;
+  text-align: center;
+  font-size: 80px;
 }
 
 .five-red {
@@ -142,4 +144,20 @@
 .five-grey {
   height: 70%;
   background-color: grey;
+}
+
+/*===========Six============*/
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+
+.no-print {
+  margin: 30px;
+  font-size: 80px;
+  text-align: center;
 }
